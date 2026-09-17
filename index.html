@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ✏️ EDIT: page title + description -->
+<title>Quinndale Parker — Full-stack developer & data analyst</title>
+<meta name="description" content="Quinndale Parker builds web applications and data systems for behavioral health and community organizations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <!-- ✏️ EDIT: business mark + name + one-line positioning -->
+    <p class="mark">QuinnPark</p>
+    <h1>Quinndale&nbsp;Parker</h1>
+    <p class="lede">I build the web applications and the data systems behind them — usually for clinics and community organizations that need their records to actually answer questions.</p>
+    <ul class="contact">
+      <!-- ✏️ EDIT: your links. Add email/GitHub. -->
+      <li><a href="https://www.linkedin.com/in/quinndale-parker-0a0ba0169/">LinkedIn</a></li>
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="Sections">
+  <button class="tab is-active" data-panel="summary">Summary</button>
+  <button class="tab" data-panel="skills">Skills</button>
+  <button class="tab" data-panel="projects">Projects</button>
+  <button class="tab" data-panel="experience">Experience</button>
+</nav>
+
+<main class="wrap">
+
+<!-- ========== SUMMARY ========== -->
+<section id="summary" class="panel is-active">
+  <!-- ✏️ EDIT: rewrite this bio in your own voice -->
+  <p class="big">Self-taught, and deliberately so. I learned to build because the organizations around me needed tools that didn't exist yet, and I've been shipping them ever since under my own practice, QuinnPark.</p>
+  <div class="cols">
+    <p>My work sits in two halves that keep feeding each other. On the front end I build with React, Next.js, Vue and TypeScript; on the back end, Node and Python. The other half is the data itself — designing how a clinic captures a behavior, where it lands, and how a director sees it three months later without opening a spreadsheet.</p>
+    <p>That combination is most of what I do: an intake form that a technician can finish in ninety seconds, wired to a warehouse that a supervisor can query, surfaced in a dashboard that reads clearly in a parent meeting. I care about the whole line, not one end of it.</p>
+  </div>
+  <dl class="facts">
+    <!-- ✏️ EDIT: swap these three facts -->
+    <div><dt>Based in</dt><dd>Columbus, Georgia</dd></div>
+    <div><dt>Practice</dt><dd>QuinnPark</dd></div>
+    <div><dt>Focus</dt><dd>Behavioral health &amp; civic data</dd></div>
+  </dl>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section id="skills" class="panel">
+  <!-- ✏️ EDIT: add/remove groups and chips freely -->
+  <div class="skillset">
+    <h2>Front end</h2>
+    <ul class="chips">
+      <li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>Vue.js</li><li>HTML &amp; CSS</li>
+    </ul>
+  </div>
+  <div class="skillset">
+    <h2>Back end</h2>
+    <ul class="chips">
+      <li>Node.js</li><li>Express</li><li>Python</li><li>REST APIs</li><li>Authentication</li>
+    </ul>
+  </div>
+  <div class="skillset">
+    <h2>Data</h2>
+    <ul class="chips">
+      <li>SQL</li><li>pandas</li><li>Tableau</li><li>BigQuery</li><li>Looker Studio</li><li>ETL pipelines</li>
+    </ul>
+  </div>
+  <div class="skillset">
+    <h2>Platform &amp; security</h2>
+    <ul class="chips">
+      <li>Google Cloud</li><li>Apps Script</li><li>Git</li><li>IT security</li><li>Access control</li><li>HIPAA-aware design</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="panel">
+  <ol class="projects">
+
+    <!-- ✏️ EDIT: one <li> per project. Copy the block to add more. -->
+    <li class="project">
+      <div class="project-head">
+        <h2>Behavioral data system — Mentoring and Behavioral Services</h2>
+        <p class="role">Design, build, ongoing support</p>
+      </div>
+      <p>A tracking, reporting and analysis system for children's behavioral data at an ABA clinic. Technicians log sessions from the floor, the data lands in a structured store instead of loose sheets, and clinical staff get reports they can take straight into a treatment review.</p>
+      <ul class="stack"><li>Google Cloud</li><li>Apps Script</li><li>SQL</li><li>Looker Studio</li></ul>
+      <a class="visit" href="https://mentoringandbehavioralservices.org">mentoringandbehavioralservices.org</a>
+    </li>
+
+    <li class="project">
+      <div class="project-head">
+        <h2>Adult care behavior tracking — B and O Services</h2>
+        <p class="role">Design, build</p>
+      </div>
+      <p>The same problem in a different population: recording day-to-day behaviors and supports for adults in care, with reporting that holds up for documentation and funding requirements.</p>
+      <ul class="stack"><li>Google Cloud</li><li>SQL</li><li>Python</li><li>pandas</li></ul>
+      <a class="visit" href="https://bandoservices.org">bandoservices.org</a>
+    </li>
+
+    <li class="project">
+      <div class="project-head">
+        <h2>JoAnn Brown for City Council</h2>
+        <p class="role">Campaign site</p>
+      </div>
+      <p>Campaign website for a Muscogee County District 5 city council run — platform, events, and volunteer sign-up, built to load fast on phones and be updated by non-technical staff during the race.</p>
+      <ul class="stack"><li>JavaScript</li><li>Responsive design</li><li>Forms</li></ul>
+    </li>
+
+    <!-- ✏️ REPLACE: these two are placeholders I drafted — swap in real work or rewrite -->
+    <li class="project">
+      <div class="project-head">
+        <h2>Clinic scheduling &amp; authorization tracker</h2>
+        <p class="role">Concept / in progress</p>
+      </div>
+      <p>A scheduling tool that knows how many authorized hours each client has left, so sessions can't be booked past an expiring authorization and billing stops chasing gaps after the fact.</p>
+      <ul class="stack"><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
+    </li>
+
+    <li class="project">
+      <div class="project-head">
+        <h2>Muscogee County civic data explorer</h2>
+        <p class="role">Personal project</p>
+      </div>
+      <p>Public county data — budgets, permits, service requests — pulled into one place and charted so a resident can answer a question without downloading four spreadsheets.</p>
+      <ul class="stack"><li>Python</li><li>pandas</li><li>Vue.js</li><li>Tableau</li></ul>
+    </li>
+
+  </ol>
+</section>
+
+<!-- ========== EXPERIENCE ========== -->
+<section id="experience" class="panel">
+  <ol class="timeline">
+    <!-- ✏️ EDIT: dates, titles, and bullets -->
+    <li>
+      <p class="when">2019 — present</p>
+      <div>
+        <h2>Founder &amp; lead developer, QuinnPark</h2>
+        <p>Independent practice building web applications and data systems for clinics, care providers and local organizations. I handle the whole engagement: scoping with the people who'll use the tool, building it, and staying on for support.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when">2021 — present</p>
+      <div>
+        <h2>Data systems consultant, Mentoring and Behavioral Services</h2>
+        <p>Own the clinic's behavioral data pipeline end to end — capture, storage, reporting and the analysis that clinical leadership uses in review meetings.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when">Ongoing</p>
+      <div>
+        <h2>Self-directed study</h2>
+        <p>No CS degree. Everything here came from building for real users with real deadlines, and from reading the documentation until it worked.</p>
+      </div>
+    </li>
+  </ol>
+  <p class="resume-link"><a href="https://www.linkedin.com/in/quinndale-parker-0a0ba0169/">Full résumé on LinkedIn</a></p>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <!-- ✏️ EDIT: footer line -->
+  <p>QuinnPark — Columbus, Georgia</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

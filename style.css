@@ -1,0 +1,134 @@
+/* ============================================================
+   ✏️ EDIT HERE FIRST — colors, fonts and widths in one place.
+   Change these values and the whole site follows.
+   ============================================================ */
+:root{
+  --paper:      #FBFAF6;   /* page background */
+  --ink:        #16232E;   /* main text */
+  --ink-soft:   #5C6B75;   /* secondary text */
+  --rule:       #E2DED4;   /* hairlines, borders */
+  --accent:     #1F6F6B;   /* teal — links, active tab */
+  --accent-2:   #B9662A;   /* ochre — small highlights */
+  --measure:    62ch;      /* comfortable line length */
+  --wrap:       960px;     /* page width */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Public Sans", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#12171B; --ink:#EFEAE0; --ink-soft:#9EAAB2;
+    --rule:#2A333A; --accent:#69C0B4; --accent-2:#E0A167;
+  }
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:400 17px/1.65 var(--font-body);
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 28px;}
+a{color:var(--accent); text-underline-offset:3px; text-decoration-thickness:1px;}
+a:hover{color:var(--accent-2);}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* ---------- Masthead ---------- */
+.masthead{padding:72px 0 44px;}
+.mark{
+  margin:0 0 20px; font-size:15px; letter-spacing:.14em;
+  color:var(--accent-2); font-weight:700;
+}
+.masthead h1{
+  font:400 clamp(44px,8vw,86px)/1.02 var(--font-display);
+  font-variation-settings:"opsz" 120;
+  margin:0 0 20px; letter-spacing:-.02em;
+}
+.lede{max-width:var(--measure); font-size:19px; color:var(--ink-soft); margin:0 0 26px;}
+.contact{list-style:none; display:flex; flex-wrap:wrap; gap:22px; padding:0; margin:0; font-size:15px;}
+
+/* ---------- Tabs ---------- */
+.tabs{
+  display:flex; gap:6px; flex-wrap:wrap;
+  border-bottom:1px solid var(--rule);
+  position:sticky; top:0; z-index:10;
+  background:var(--paper);
+  padding-top:6px;
+}
+.tab{
+  appearance:none; background:none; border:0; cursor:pointer;
+  font:500 16px/1 var(--font-body); color:var(--ink-soft);
+  padding:14px 14px 15px; margin-bottom:-1px;
+  border-bottom:2px solid transparent;
+  transition:color .15s ease, border-color .15s ease;
+}
+.tab:hover{color:var(--ink);}
+.tab.is-active{color:var(--ink); border-bottom-color:var(--accent);}
+
+/* ---------- Panels ---------- */
+.panel{display:none; padding:56px 0 24px;}
+.panel.is-active{display:block;}
+
+/* Summary */
+.big{
+  font:400 clamp(24px,3.4vw,33px)/1.32 var(--font-display);
+  max-width:24ch; margin:0 0 44px;
+}
+.cols{display:grid; gap:28px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); max-width:820px;}
+.cols p{margin:0; color:var(--ink-soft);}
+.facts{
+  display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  margin:52px 0 0; padding-top:26px; border-top:1px solid var(--rule);
+}
+.facts div{margin:0;}
+.facts dt{font-size:14px; color:var(--ink-soft); margin-bottom:4px;}
+.facts dd{margin:0; font-weight:500;}
+
+/* Skills */
+.skillset{padding:26px 0; border-bottom:1px solid var(--rule); display:grid; gap:14px; grid-template-columns:200px 1fr;}
+.skillset:first-child{padding-top:0;}
+.skillset h2{margin:0; font:600 17px/1.4 var(--font-body);}
+.chips{list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:0;}
+.chips li{
+  border:1px solid var(--rule); border-radius:999px;
+  padding:5px 13px; font-size:14.5px; color:var(--ink-soft);
+}
+
+/* Projects */
+.projects{list-style:none; padding:0; margin:0;}
+.project{padding:34px 0; border-top:1px solid var(--rule);}
+.project:first-child{border-top:0; padding-top:0;}
+.project-head h2{margin:0 0 4px; font:400 clamp(21px,2.6vw,27px)/1.25 var(--font-display);}
+.role{margin:0 0 14px; font-size:14px; color:var(--accent-2);}
+.project > p{max-width:var(--measure); color:var(--ink-soft); margin:0 0 16px;}
+.stack{list-style:none; display:flex; flex-wrap:wrap; gap:6px 16px; padding:0; margin:0 0 12px; font-size:14px; color:var(--ink-soft);}
+.visit{font-size:15px;}
+
+/* Experience */
+.timeline{list-style:none; padding:0; margin:0;}
+.timeline li{display:grid; grid-template-columns:180px 1fr; gap:18px; padding:30px 0; border-top:1px solid var(--rule);}
+.timeline li:first-child{border-top:0; padding-top:0;}
+.when{margin:0; font-size:14.5px; color:var(--accent-2);}
+.timeline h2{margin:0 0 8px; font:600 18px/1.4 var(--font-body);}
+.timeline p:last-child{margin:0; color:var(--ink-soft); max-width:var(--measure);}
+.resume-link{margin-top:36px; font-size:15px;}
+
+/* Footer */
+footer{padding:48px 0 60px; margin-top:40px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--ink-soft);}
+footer p{margin:0;}
+
+/* ---------- Small screens ---------- */
+@media (max-width:640px){
+  body{font-size:16px;}
+  .masthead{padding:48px 0 32px;}
+  .skillset, .timeline li{grid-template-columns:1fr; gap:10px;}
+  .tabs{gap:0;}
+  .tab{padding:12px 10px; font-size:15px;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important; scroll-behavior:auto;}
+}
